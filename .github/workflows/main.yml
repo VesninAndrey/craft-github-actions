@@ -37,8 +37,5 @@ jobs:
         mysql user: root
         # MYSQL_PASSWORD - specified superuser password which user is power for created database
 
-    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
-    # Docs: https://getcomposer.org/doc/articles/scripts.md
-
     - name: Run Unit Tests
       run: php vendor/bin/codecept run unit
