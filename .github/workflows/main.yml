@@ -20,8 +20,11 @@ jobs:
     - name: Run Docker
       run: docker-compose up -d
 
+    - name: Check docker
+      run: docker ps -a
+
     - name: Create database
-      run: mysql -h 127.0.0.1 -uroot -P 33061 -e "CREATE DATABASE craft;"
+      run: mysql -h 0.0.0.0 -uroot -P 33061 -e "CREATE DATABASE craft;"
 
     - name: Check docker
       run: docker ps -a
