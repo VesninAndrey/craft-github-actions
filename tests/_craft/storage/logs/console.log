@@ -354,3 +354,79 @@ $_SERVER = [
     'DB_TABLE_PREFIX' => 'craft_'
     'DEFAULT_SITE_URL' => 'http://loc.loc'
 ]
+2020-04-27 02:55:38 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\shell\Bootstrap::bootstrap()
+2020-04-27 02:55:38 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=mysql;port=3306;dbname=craft;
+2020-04-27 02:55:38 [-][-][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=mysql;port=3306;dbname=craft;
+2020-04-27 02:55:38 [-][-][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=mysql;port=3306;dbname=craft;
+2020-04-27 02:55:38 [-][-][-][error][craft\db\Connection::open] SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+2020-04-27 02:55:38 [-][-][-][error][craft\db\Connection::open] SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+2020-04-27 02:55:38 [-][-][-][info][yii\db\Command::query] SHOW TABLES
+2020-04-27 02:55:38 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=mysql;port=3306;dbname=craft;
+2020-04-27 02:55:38 [-][-][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=mysql;port=3306;dbname=craft;
+2020-04-27 02:55:38 [-][-][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=mysql;port=3306;dbname=craft;
+2020-04-27 02:55:38 [-][-][-][error][craft\db\Connection::open] SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+2020-04-27 02:55:38 [-][-][-][error][craft\db\Connection::open] SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+2020-04-27 02:55:37 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'vesninandrey'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOME' => '/Users/vesninandrey'
+    'COMMAND_MODE' => 'unix2003'
+    'LOGIN_SHELL' => '1'
+    'XPC_SERVICE_NAME' => '0'
+    'LOGNAME' => 'vesninandrey'
+    'TMPDIR' => '/var/folders/1r/1cn2pcpd5jvfqn97rmb6p13r0000gn/T/'
+    'SHELL' => '/bin/zsh'
+    '__INTELLIJ_COMMAND_HISTFILE__' => '/Users/vesninandrey/Library/Application Support/JetBrains/PhpStorm2020.1/terminal/history/history-59'
+    'SECURITYSESSIONID' => '186a8'
+    'XPC_FLAGS' => '0x0'
+    'LaunchInstanceID' => '3A764337-F5DB-4443-AD8D-C66E8277C431'
+    'LC_CTYPE' => 'ru_RU.UTF-8'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'DISPLAY' => '/private/tmp/com.apple.launchd.iaB84iJqq8/org.macosforge.xquartz:0'
+    'ZDOTDIR' => ''
+    'PATH' => '/Users/vesninandrey/bin:/usr/local/bin:/Users/vesninandrey/.composer/vendor/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/X11/bin:/usr/local/git/bin'
+    'TERM' => 'xterm-256color'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.6sAvHq5MQP/Listeners'
+    'SHLVL' => '1'
+    'PWD' => '/Users/vesninandrey/www/craft-github-actions'
+    'OLDPWD' => '/Users/vesninandrey/www/craft-github-actions'
+    'GOPATH' => '/Users/vesninandrey/go'
+    'ZSH' => '/Users/vesninandrey/.oh-my-zsh'
+    'PAGER' => 'less'
+    'LESS' => '-R'
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    '_' => '/usr/local/bin/php'
+    'PHP_SELF' => 'vendor/bin/codecept'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'index.php'
+    'PATH_TRANSLATED' => 'vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1587956137.8214
+    'REQUEST_TIME' => 1587956137
+    'argv' => [
+        0 => 'vendor/bin/codecept'
+        1 => 'run'
+        2 => 'unit'
+    ]
+    'argc' => 3
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'DB_DSN' => 'mysql:host=mysql;port=3306;dbname=craft;'
+    'DB_USER' => 'root'
+    'DB_PASSWORD' => ''
+    'DB_SCHEMA' => ''
+    'DB_TABLE_PREFIX' => 'craft_'
+    'DEFAULT_SITE_URL' => 'http://loc.loc'
+    'SERVER_NAME' => 'your-site-url.test'
+    'SERVER_PORT' => '80'
+    'HTTPS' => true
+    'REMOTE_ADDR' => '1.1.1.1'
+    'REMOTE_PORT' => 654321
+]
