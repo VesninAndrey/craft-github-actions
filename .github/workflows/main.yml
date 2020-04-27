@@ -21,7 +21,7 @@ jobs:
       run: docker-compose up -d
 
     - name: Create database
-      run: mysql -h mysql -uroot -P 33061 -e "CREATE DATABASE craft;"
+      run: mysql -h 127.0.0.1 -uroot -P 33061 -e "CREATE DATABASE craft;"
 
     - name: Run Unit Tests
       run: docker exec craft_php bash -c 'codecept run unit'
