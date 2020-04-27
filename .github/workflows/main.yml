@@ -21,4 +21,4 @@ jobs:
       run: docker-compose up -d
 
     - name: Run Unit Tests
-      run: docker exec -it craft_php bash -c 'codecept run unit'
+      run: docker exec craft_php bash -c 'codecept run unit'
