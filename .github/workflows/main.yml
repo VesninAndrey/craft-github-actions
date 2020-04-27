@@ -14,20 +14,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Install dependencies
-      run: composer install --prefer-dist --no-progress --no-suggest
-
     - name: Run Docker
       run: docker-compose up -d
 
-    - name: Check docker
-      run: docker ps -a
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-progress --no-suggest
 
     - name: Create database
-      run: mysql -uroot -P 33061 -e "CREATE DATABASE craft;"
-
-    - name: Check docker
-      run: docker ps -a
+      run: mysql -h 127.0.0.1 -P 33061 -e "CREATE DATABASE craft;" -uroot
 
     - name: Run Unit Tests
       run: docker exec craft_php bash -c 'codecept run unit'
