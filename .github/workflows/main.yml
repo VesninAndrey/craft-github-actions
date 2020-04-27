@@ -23,5 +23,8 @@ jobs:
     - name: Create database
       run: mysql -h 127.0.0.1 -uroot -P 33061 -e "CREATE DATABASE craft;"
 
+    - name: Check docker
+      run: docker ps -a
+
     - name: Run Unit Tests
       run: docker exec craft_php bash -c 'codecept run unit'
