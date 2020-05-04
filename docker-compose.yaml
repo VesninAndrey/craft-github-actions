@@ -1,8 +1,10 @@
-version: '2'
+version: '3'
 services:
   php:
     container_name: craft_php
-    image: yiisoftware/yii2-php:7.3-apache
+    image: yiisoftware/yii2-php:7.4-apache
+    depends_on:
+      - mysql
     links:
       - mysql:mysql
     volumes:
@@ -15,6 +17,7 @@ services:
       container_name: craft_mysql
       restart: always
       image: mysql:5.7
+      command: --init-file /init.sql
       ports:
           - "33061:3306"
       environment:

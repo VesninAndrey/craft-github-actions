@@ -20,8 +20,8 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress --no-suggest
 
-    - name: Create database
-      run: mysql -h 127.0.0.1 -P 33061 -e "CREATE DATABASE craft;" -uroot
+    - name: Wait for MySQL
+      run: ./wait-for-mysql.sh
 
     - name: Run Unit Tests
       run: docker exec craft_php bash -c 'codecept run unit'
