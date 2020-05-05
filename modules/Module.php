@@ -41,4 +41,12 @@ class Module extends \yii\base\Module
 
         // Custom initialization code goes here...
     }
+
+    private function shouldFailCS(){
+        $hello_world = 1;
+        if($hello_world === true){
+            return 1;
+        }
+        return 2;
+    }
 }
