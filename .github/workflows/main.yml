@@ -15,8 +15,8 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: PHP_CS
-      uses: chekalsky/phpcs-action@v1
-      
+      uses: elblasto/supercraft_phpcs@master
+
     - name: Run Docker
       run: docker-compose up -d
 
