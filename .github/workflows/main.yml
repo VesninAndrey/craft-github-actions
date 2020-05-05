@@ -16,8 +16,7 @@ jobs:
 
     - name: PHP_CS
       uses: elblasto/supercraft_phpcs@v1
-      run: docker exec craft_php bash -c 'codecept run unit'
-      
+
     - name: Run Docker
       run: docker-compose up -d
 
