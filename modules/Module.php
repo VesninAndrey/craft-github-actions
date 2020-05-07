@@ -42,11 +42,18 @@ class Module extends \yii\base\Module
         // Custom initialization code goes here...
     }
 
-    private function shouldFailCS(){
-        $hello_world = 1;
-        if($hello_world === true){
+    /**
+     * @param $param
+     *
+     * @return int
+     */
+    private function shouldFailCS($param)
+    {
+        $helloWorld = 1;
+        if (true === $helloWorld) {
             return 1;
         }
+
         return 2;
     }
 }
