@@ -17,6 +17,9 @@ jobs:
     - name: PHP_CS
       uses: supercraftshop/github-actions@master
 
+    - name: TWIG_CS
+      uses: elblasto/githubaction_twig@master
+
     - name: Run Docker
       run: docker-compose up -d
 
