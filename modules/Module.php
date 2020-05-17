@@ -49,10 +49,11 @@ class Module extends \yii\base\Module
      */
     private function shouldFailCS($param)
     {
-        $hello_world = 1;
-        if(true === $hello_world){
+        $helloWorld = 1;
+        if (true === $helloWorld) {
             return 1;
         }
+
         return 2;
     }
 }
